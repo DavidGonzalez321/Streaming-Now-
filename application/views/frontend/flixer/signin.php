@@ -3,11 +3,11 @@
 <?php endif; ?>
 
 <!-- TOP LANDING SECTION -->
-<div style="background-repeat: no-repeat;background-size: cover; background-position: center; clear: both; background-image: url(<?php echo base_url().'assets/frontend/flixer/images/collage_background.jpg';?>)">
+<div style="background-repeat: no-repeat;background-size: cover; background-position: center; clear: both;background-image: url(<?php echo base_url().'assets/frontend/flixer/images/fondo-lading.jpg';?>)">
 	<!-- logo -->
 	<div style="float: left;">
 		<a href="<?php echo base_url();?>index.php?home">
-		<img src="<?php echo base_url();?>/assets/global/logo.png" style="margin: 18px; width: 160px;height: 160px; float: left;margin: 18px; background-color:#000;background-size: cover; border-radius:50%;" />
+		<img src="<?php echo base_url();?>/assets/global/logo.png" style="margin: 18px; width: 160px;height: 160px; float: left;margin: 18px;background-size: cover; border-radius:50%;" />
 		</a>
 	</div>
 	<div class="row">

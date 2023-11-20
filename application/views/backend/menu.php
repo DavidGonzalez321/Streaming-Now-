@@ -91,9 +91,9 @@
                </a>
            </li>
 
-           <li  class="fa-solid fa-music <?php if ($page_name == 'Sountrack')echo 'active';?>">
+           <li  class="side-nav-item  <?php if ($page_name == 'Sountrack')echo 'active';?>">
         <a href="<?php echo base_url();?>index.php?admin/Sountrack" class="side-nav-link <?php if ($page_name == 'dashboard')echo 'active';?>">
-                   <i class="fa-solid fa-music"></i>
+                   <i class="fa fa-music"></i>
                    <span> <?php echo get_phrase('Sountrack'); ?> </span>
                </a>
         </li>

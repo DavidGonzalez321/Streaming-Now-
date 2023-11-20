@@ -14,7 +14,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-3">
                 <select class="select2 form-control select2-multiple" data-toggle="select2" name="actor" id="actor" data-placeholder="Choose ...">
-                    <option value="all"><?php echo get_phrase('all_actors'); ?></option>
+                    <option value="all"><?php echo get_phrase('Todos los actores'); ?></option>
                     <?php $actors = $this->db->get('actor')->result_array(); ?>
                     <?php foreach ($actors as $key => $actor): ?>
                         <option value="<?php echo $actor['actor_id']; ?>" <?php if ($actor_id == $actor['actor_id']): ?>selected<?php endif; ?>><?php echo $actor['name']; ?></option>
@@ -67,7 +67,7 @@
                     <td style="vertical-align: middle;">
                         <a href="<?php echo base_url();?>index.php?browse/playmovie/<?php echo $row['movie_id'];?>"
                             target="_blank" class="btn btn-primary">
-                            <i class="fa fa-external-link"></i> visit</a>
+                            <i class="fa fa-external-link"></i> visitar</a>
                             <a href="<?php echo base_url();?>index.php?admin/subtitle/<?php echo $row['movie_id'];?>" class="btn btn-success">
                                 Subtitulo</a>
                                 <a href="<?php echo base_url();?>index.php?admin/movie_edit/<?php echo $row['movie_id'];?>" class="btn btn-info">

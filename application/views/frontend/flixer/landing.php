@@ -23,7 +23,7 @@
 			<?php echo get_phrase('DISFRUTA DONDE SEA.');?> <?php echo get_phrase('Y EN CUALQUIER MOMENTO.');?>
 		</div>
 		<a href="<?php echo base_url();?>index.php?home/signup" class="btn btn-danger btn-lg"
-			style=" padding: 20px 50px; font-size: 30px;">
+			style=" margin:10px ; font-size: 30px;">
 			<?php echo get_phrase('Únete hoy y disfruta de un mes gratis.');?>
 			<i class="fa fa-angle-right" style="margin:0px 0px 0px 20px;"></i>
 		</a>
@@ -35,7 +35,7 @@
 		<div style="font-size: 25px; letter-spacing: .2px; color: #fff; font-weight: 400;">
 			<?php echo get_phrase('DISFRUTA DONDE SEA.');?> <br> <?php echo get_phrase('Y EN CUALQUIER MOMENTO.');?>
 		</div>
-		<a href="<?php echo base_url();?>index.php?home/signup" class="btn btn-danger btn-lg" ><?php echo get_phrase('Únete hoy y disfruta de un mes gratis.');?></a>
+		<a href="<?php echo base_url();?>index.php?home/signup" class="btn btn-danger btn-lg" style=" margin:10px ; font-size: 30px;" ><?php echo get_phrase('Únete hoy y disfruta de un mes gratis.');?></a>
 		<br>
 	</div>
 </div>

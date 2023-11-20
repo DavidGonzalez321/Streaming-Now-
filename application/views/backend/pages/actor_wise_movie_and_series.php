@@ -48,7 +48,7 @@
                							<td style="vertical-align: middle;">
                								<a href="<?php echo base_url();?>index.php?browse/playmovie/<?php echo $row['movie_id'];?>"
                									target="_blank" class="btn btn-secondary btn-xs btn-mini">
-               								<i class="fa fa-external-link"></i>visit</a>
+               								<i class="fa fa-external-link"></i>visitar</a>
                								<a href="<?php echo base_url();?>index.php?admin/movie_edit/<?php echo $row['movie_id'];?>" class="btn btn-info btn-xs btn-mini">
                								edit</a>
                								<a href="<?php echo base_url();?>index.php?admin/movie_delete/<?php echo $row['movie_id'];?>" class="btn btn-danger btn-xs btn-mini" onclick="return confirm('Want to delete?')">
@@ -88,7 +88,7 @@
                  							<td style="vertical-align: middle;">
                  								<a href="<?php echo base_url();?>index.php?browse/playseries/<?php echo $row['series_id'];?>"
                  									target="_blank" class="btn btn-secondary btn-xs btn-mini">
-                 								<i class="fa fa-external-link"></i>visit</a>
+                 								<i class="fa fa-external-link"></i>visitar</a>
                  								<a href="<?php echo base_url();?>index.php?admin/series_edit/<?php echo $row['series_id'];?>" class="btn btn-info btn-xs btn-mini">
                  								manage</a>
                  								<a href="<?php echo base_url();?>index.php?admin/series_delete/<?php echo $row['series_id'];?>" class="btn btn-danger btn-xs btn-mini" onclick="return confirm('Want to delete?')">

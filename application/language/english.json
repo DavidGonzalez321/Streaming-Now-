@@ -389,7 +389,7 @@
     "faq": "Faq",
     "frequently_asked_question": "Frequently asked question",
     "creativeitem": "Creativeitem",
-    "visit_website": "Visit website",
+    "visit_website": "Visitar",
     "purchase_packages": "Purchase packages",
     "purchase_package": "Purchase package",
     "purchase_a_package": "Purchase a package",
@@ -555,7 +555,7 @@
     "page_not_found": "Page not found",
     "we_are_sorry": "We are sorry",
     "but_the_page_you_are_looking_for_does_not_exist": "But the page you are looking for does not exist",
-    "search": "Search",
+    "search": "Buscar",
     "active_listings": "Active listings",
     "our_plans_and_pricings": "Our plans and pricings",
     "we_have_plans_and_prices_that_fit_your_business_perfectly": "We have plans and prices that fit your business perfectly",
@@ -981,7 +981,7 @@
     "effective_upto": "Effective upto",
     "filter_by_cast": "Filter by cast",
     "filter_result": "Filter result",
-    "all_actors": "All actors",
+    "all_actors": "Todos los actores",
     "series": "Series",
     "addons": "Addons",
     "addon_manager": "Addon manager",
@@ -1213,5 +1213,6 @@
     "buscar_resultados_desde": "Buscar resultados desde",
     "Únete_hoy_y_disfruta_de_un_mes_gratisssss": "Únete hoy y disfruta de un mes gratisssss",
     "Únete_hoy_y_disfruta_de_un_mes_gratis.": "Únete hoy y disfruta de un mes gratis.",
-    "sountrack": "Sountrack"
+    "sountrack": "Sountrack",
+    "inicio_de_sesión_fallido!_intente_nuevamente.": "Inicio de sesión fallido! intente nuevamente."
 }
