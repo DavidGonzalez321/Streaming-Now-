@@ -15,8 +15,8 @@
 	else
 		$nav_type = 'nav_dark';
 	?>
-<div class="navbar navbar-default navbar-fixed-top <?php echo $nav_type;?>" >
-	<div class="container" style=" width: 100%;height: 65px;">
+<div class="navbar navbar-default navbar-fixed-top <?php echo $nav_type;?>" style=" background-color: #000 ">
+	<div class="container" style=" width: 100%;height: 65px; ">
 		<div class="navbar-header">
 			<a href="<?php echo base_url();?>index.php?browse/home" class="navbar-brand" style="heihgt:45px">
 				<img src="<?php echo base_url();?>/assets/global/logo.png" style="height:60px;width:60px; float: left;margin-left: -6px; margin-top: -15px;background-color:#000;background-size: cover; border-radius:50%;" />
@@ -230,3 +230,4 @@
 		$padding_amount = '50px';
 	?>
 <div style="padding: <?php echo $padding_amount;?>;"></div>
+
