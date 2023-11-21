@@ -2,10 +2,10 @@
 <style>
 	.nav_transparent {
 	padding: 10px 0px 10px; border: 1px;
-	background: white;
+	background: #000;
 	}
 	.nav_dark {
-	background-color: #b5b5b5;;
+	background-color: #000;
 	padding: 10px;
 	}
 </style>
@@ -76,6 +76,12 @@
 						</li>
 						<?php endforeach;?>
 					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="<?php echo base_url();?>index.php?browse/sountrack" style="color: #050ae7; font-weight: bold;">
+						<?php echo get_phrase('Sountrack');?> <span class="caret"></span>
+					</a>
 				</li>
 
 				<li class="dropdown">
