@@ -98,6 +98,13 @@
                </a>
         </li>
 
+        <li  class="side-nav-item  <?php if ($page_name == 'Tienda Virtual')echo 'active';?>">
+        <a href="<?php echo base_url();?>index.php?admin/Productos" class="side-nav-link <?php if ($page_name == 'dashboard')echo 'active';?>">
+                   <i class="fa fa-music"></i>
+                   <span> <?php echo get_phrase('Productos'); ?> </span>
+               </a>
+        </li>
+
            <!-- Blogs -->
           <?php if(addon_status('blog')): ?>
             <li class="<?php if ($page_name == 'blogs' || $page_name == 'add_blog_form' || $page_name == 'edit_blog_form') echo 'opened has-sub'; ?>">

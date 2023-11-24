@@ -1218,5 +1218,15 @@
     "lista_de_sountrack": "Lista de sountrack",
     "nombre_del_pais": "Nombre del pais",
     "crear": "Crear",
-    "url_del_video_no_esta_soportado": "Url del video no esta soportado"
+    "url_del_video_no_esta_soportado": "Url del video no esta soportado",
+    "lista_de_productos": "Lista de productos",
+    "productos": "Productos",
+    "plan": "Plan",
+    "realizar_pago": "Realizar pago",
+    "pagos": "Pagos",
+    "resúmen": "Resúmen",
+    "pagar_con_paypal": "Pagar con paypal",
+    "pagar_con_stripe": "Pagar con stripe",
+    "nombre": "Nombre",
+    "pagar": "Pagar"
 }

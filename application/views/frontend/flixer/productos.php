@@ -5,11 +5,11 @@
 
 <div class="container">
 
-<h4 style="text-transform: capitalize;"><?php echo get_phrase('Lista de Sountrack'); ?></h4>
+<h4 style="text-transform: capitalize;"><?php echo get_phrase('Lista de Productos'); ?></h4>
 
 	<div class="container">
 
-	<?php include 'application/views/backend/pages/sountrack.php';?>
+	<?php include 'application/views/backend/pages/productos.php';?>
 
 	</div>
 	

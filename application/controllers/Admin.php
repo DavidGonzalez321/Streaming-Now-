@@ -32,6 +32,13 @@ class Admin extends CI_Controller {
 		$this->load->view('backend/index', $page_data);
 	}
 
+	function productos()
+	{
+		$page_data['page_name']		=	'Productos';
+		$page_data['page_title']	=	'Listas de Productos';
+		$this->load->view('backend/index', $page_data);
+	}
+
 	// WATCH LIST OF GENRE, MANAGE THEM
 	function genre_list()
 	{

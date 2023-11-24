@@ -273,6 +273,13 @@ class Browse extends CI_Controller {
 		$this->load->view('frontend/index', $page_data);
 	}
 
+	function productos()
+	{
+		$page_data['page_name']		=	'productos';
+		$page_data['page_title']	=	'Listas de Productos';
+		$this->load->view('frontend/index', $page_data);
+	}
+
 	function switchprofile()
 	{
 		$this->subscription_check();
