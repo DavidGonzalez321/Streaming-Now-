@@ -2,10 +2,10 @@
 <style>
 	.nav_transparent {
 	padding: 10px 0px 10px; border: 1px;
-	background: white;
+	background: #000;
 	}
 	.nav_dark {
-	background-color: #b5b5b5;;
+	background-color: #000;
 	padding: 10px;
 	}
 </style>
@@ -78,16 +78,20 @@
 					</ul>
 				</li>
 
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #050ae7; font-weight: bold;">
-						<?php echo get_phrase('Tienda Virtual');?> <span class="caret"></span>
+				<li>
+					<a href="<?php echo base_url();?>index.php?browse/sountrack" style="color: #050ae7; font-weight: bold;">
+						<?php echo get_phrase('Sountrack');?> <span class="caret"></span>
 					</a>
-					<ul class="dropdown-menu" aria-labelledby="themes">
-						
-					</ul>
 				</li>
 
-				<li class="dropdown">
+				<li>
+					<a href="<?php echo base_url();?>index.php?browse/productos" style="color: #050ae7; font-weight: bold;">
+						<?php echo get_phrase('Tienda Virtual');?> <span class="caret"></span>
+					</a>
+				</li>
+
+
+				<li>
 					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #050ae7; font-weight: bold;">
 						<?php echo get_phrase('Comunidad Web');?> <span class="caret"></span>
 					</a>
@@ -219,6 +223,7 @@
 						style="background-color: #000; border: 1px solid #808080; height:35px;" name="search_key">
 				</div>
 				<button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+				<?php include 'application\views\backend\pages\reloj.php';?>
 			</form>
 		</div>
 	</div>

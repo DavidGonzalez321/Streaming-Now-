@@ -65,6 +65,7 @@
                         </a>
                     </li>
                 </ul>
+                <?php include 'application\views\backend\pages\reloj.php';?>
             </li>
         </ul>
     </div>

@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
-
+ 
 	// constructor
 	function __construct()
 	{
@@ -29,6 +29,13 @@ class Admin extends CI_Controller {
 	{
 		$page_data['page_name']		=	'Sountrack';
 		$page_data['page_title']	=	'Listas de Sountrack';
+		$this->load->view('backend/index', $page_data);
+	}
+
+	function productos()
+	{
+		$page_data['page_name']		=	'Productos';
+		$page_data['page_title']	=	'Listas de Productos';
 		$this->load->view('backend/index', $page_data);
 	}
 

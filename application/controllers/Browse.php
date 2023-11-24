@@ -4,7 +4,7 @@
 * Developer : Creativeitem
 * Date : November, 2018
 * Support : http://support.creativeitem.com
-*/
+*/ 
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -263,6 +263,20 @@ class Browse extends CI_Controller {
 	{
 		$page_data['page_name']		=	'youraccount';
 		$page_data['page_title']	=	'Your Account';
+		$this->load->view('frontend/index', $page_data);
+	}
+
+	function sountrack()
+	{
+		$page_data['page_name']		=	'sountrack';
+		$page_data['page_title']	=	'Listas de Sountrack';
+		$this->load->view('frontend/index', $page_data);
+	}
+
+	function productos()
+	{
+		$page_data['page_name']		=	'productos';
+		$page_data['page_title']	=	'Listas de Productos';
 		$this->load->view('frontend/index', $page_data);
 	}
 
