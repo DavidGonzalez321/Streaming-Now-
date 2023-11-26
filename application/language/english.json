@@ -1081,7 +1081,7 @@
     "sandbox_secret_key": "Sandbox secret key",
     "production_secret_key": "Production secret key",
     "production_client_id": "Production client id",
-    "countries": "Countries",
+    "countries": "Paises",
     "add_country": "Add country",
     "operation": "Operation",
     "create_country": "Create country",
@@ -1228,5 +1228,6 @@
     "pagar_con_paypal": "Pagar con paypal",
     "pagar_con_stripe": "Pagar con stripe",
     "nombre": "Nombre",
-    "pagar": "Pagar"
+    "pagar": "Pagar",
+    "tarjeta_de_débito/crédito": "Tarjeta de débito/crédito"
 }

@@ -10,7 +10,9 @@
 	<?php include 'includes_top.php';?>
 </head>
 <body>
+
 	<?php include 'payment_gateway.php'; ?>
 	<?php include 'includes_bottom.php'; ?>
+	
 </body>
 </html>

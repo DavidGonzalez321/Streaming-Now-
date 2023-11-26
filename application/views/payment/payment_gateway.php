@@ -151,6 +151,7 @@ $paypal = json_decode(get_settings('paypal'));
 $stripe = json_decode(get_settings('stripe_keys'));
 ?>
 
+
 <div class="container">
 	<div class="row justify-content-center mb-5">
 		<div class="col-md-8">
@@ -162,7 +163,6 @@ $stripe = json_decode(get_settings('stripe_keys'));
 			</div>
 		</div>
 	</div>
-
 	<div class="row justify-content-center">
 		<div class="col-md-8">
 			<div class="row">

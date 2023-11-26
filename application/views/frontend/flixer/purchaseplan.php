@@ -111,6 +111,9 @@ table{
 			<div class="pull-right">
 				<a href="<?php echo base_url();?>index.php?browse/youraccount" class="btn btn-default">Volver a atrás</a>
 				<a href="javascript:" class="btn btn-primary" id="checkoutButton" onclick="checkPlan()">Verificar compra</a>
+
+
+				
 			</div>
 		</div>
 		<script>

@@ -308,7 +308,7 @@ class Browse extends CI_Controller {
 	{
 		$this->subscription_check();
 		$page_data['page_name']			=	'manageprofile';
-		$page_data['page_title']		=	'Manage Profile';
+		$page_data['page_title']		=	'Administración de perfiles';
 		$page_data['current_plan_id']	=	$this->crud_model->get_current_plan_id();
 		$this->load->view('frontend/index', $page_data);
 

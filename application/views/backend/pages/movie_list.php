@@ -34,7 +34,7 @@
             <?php echo get_phrase('Lista de peliculas'); ?>
         </div>
     </div>
-    <div class="panel-body">
+    <div class="panel-body"> 
         <table class="table table-bordered datatable" id="table_export">
             <thead>
                 <tr>

@@ -21,7 +21,7 @@ class Admin extends CI_Controller {
 	function dashboard()
 	{
 		$page_data['page_name']		=	'dashboard';
-		$page_data['page_title']	=	'Home - Summary';
+		$page_data['page_title']	=	'Pagina principal';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -43,7 +43,7 @@ class Admin extends CI_Controller {
 	function genre_list()
 	{
 		$page_data['page_name']		=	'genre_list';
-		$page_data['page_title']	=	'Manage Genre';
+		$page_data['page_title']	=	'Administración de generos';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -136,7 +136,7 @@ class Admin extends CI_Controller {
 	{
 		$page_data['actor_id']		=	empty($actor_id) ? 'all' : $actor_id;
 		$page_data['page_name']		=	'movie_list';
-		$page_data['page_title']	=	'Manage movie';
+		$page_data['page_title']	=	'Administración peliculas';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -162,7 +162,7 @@ class Admin extends CI_Controller {
 	{
 		$page_data['movie_id']		= $param1;
 		$page_data['page_name']		=	'subtitle';
-		$page_data['page_title']	=	'Manage subtitle : '.$this->db->get_where('movie', array('movie_id' => $param1))->row('title');
+		$page_data['page_title']	=	'Administración de subtitulos: '.$this->db->get_where('movie', array('movie_id' => $param1))->row('title');
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -232,7 +232,7 @@ class Admin extends CI_Controller {
 	{
 		$page_data['actor_id']		=	empty($actor_id) ? 'all' : $actor_id;
 		$page_data['page_name']		=	'series_list';
-		$page_data['page_title']	=	'Manage Tv Series';
+		$page_data['page_title']	=	'Administración de series';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -259,7 +259,7 @@ class Admin extends CI_Controller {
 		}
 		$page_data['series_id']		=	$series_id;
 		$page_data['page_name']		=	'series_edit';
-		$page_data['page_title']	=	'Edit Tv Series. Manage Seasons & Episodes';
+		$page_data['page_title']	=	'Editar series. Administración de episodios y temporadas Seasons & Episodes';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -350,7 +350,7 @@ class Admin extends CI_Controller {
 	function actor_list()
 	{
 		$page_data['page_name']		=	'actor_list';
-		$page_data['page_title']	=	'Manage actor';
+		$page_data['page_title']	=	'Administración de actores';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -392,7 +392,7 @@ class Admin extends CI_Controller {
 	function director_list()
 	{
 		$page_data['page_name']		=	'director_list';
-		$page_data['page_title']	=	'Manage Director';
+		$page_data['page_title']	=	'Administración de directores';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -434,7 +434,7 @@ class Admin extends CI_Controller {
 	function plan_list()
 	{
 		$page_data['page_name']		=	'plan_list';
-		$page_data['page_title']	=	'Manage plan';
+		$page_data['page_title']	=	'Administración de planes';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -459,7 +459,7 @@ class Admin extends CI_Controller {
 	function user_list()
 	{
 		$page_data['page_name']		=	'user_list';
-		$page_data['page_title']	=	'Manage user';
+		$page_data['page_title']	=	'Administración de usuarios';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -516,7 +516,7 @@ class Admin extends CI_Controller {
 	function faq_list()
 	{
 		$page_data['page_name']		=	'faq_list';
-		$page_data['page_title']	=	'Manage faq';
+		$page_data['page_title']	=	'Administración de preguntas frecuentes';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -836,7 +836,7 @@ class Admin extends CI_Controller {
 			}
 		}
 		$page_data['page_name']				=	'account';
-		$page_data['page_title']			=	'Manage account';
+		$page_data['page_title']			=	'Administracion de cuentas';
 		$this->load->view('backend/index', $page_data);
 	}
 
