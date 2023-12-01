@@ -57,7 +57,7 @@ class Admin extends CI_Controller {
 			redirect(base_url().'index.php?admin/genre_list' , 'refresh');
 		}
 		$page_data['page_name']		=	'genre_create';
-		$page_data['page_title']	=	'Create Genre';
+		$page_data['page_title']	=	'Crear Genero';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -149,7 +149,7 @@ class Admin extends CI_Controller {
 			redirect(base_url().'index.php?admin/movie_list' , 'refresh');
 		}
 		$page_data['page_name']		=	'movie_create';
-		$page_data['page_title']	=	'Create movie';
+		$page_data['page_title']	=	'Crear pelicula';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -216,7 +216,7 @@ class Admin extends CI_Controller {
 		}
 		$page_data['movie_id']		=	$movie_id;
 		$page_data['page_name']		=	'movie_edit';
-		$page_data['page_title']	=	'Edit movie';
+		$page_data['page_title']	=	'Ediar pelicula';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -245,7 +245,7 @@ class Admin extends CI_Controller {
 			redirect(base_url().'index.php?admin/series_list' , 'refresh');
 		}
 		$page_data['page_name']		=	'series_create';
-		$page_data['page_title']	=	'Create Tv Series';
+		$page_data['page_title']	=	'Crear Series de Tv';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -363,7 +363,7 @@ class Admin extends CI_Controller {
 			redirect(base_url().'index.php?admin/actor_list' , 'refresh');
 		}
 		$page_data['page_name']		=	'actor_create';
-		$page_data['page_title']	=	'Create actor';
+		$page_data['page_title']	=	'Crear actor';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -405,7 +405,7 @@ class Admin extends CI_Controller {
 			redirect(base_url().'index.php?admin/director_list' , 'refresh');
 		}
 		$page_data['page_name']		=	'director_create';
-		$page_data['page_title']	=	'Create director';
+		$page_data['page_title']	=	'Crear director';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -472,7 +472,7 @@ class Admin extends CI_Controller {
 			redirect(base_url().'index.php?admin/user_list' , 'refresh');
 		}
 		$page_data['page_name']		=	'user_create';
-		$page_data['page_title']	=	'Create user';
+		$page_data['page_title']	=	'Crear usuario';
 		$this->load->view('backend/index', $page_data);
 	}
 
@@ -531,7 +531,7 @@ class Admin extends CI_Controller {
 			redirect(base_url().'index.php?admin/faq_list' , 'refresh');
 		}
 		$page_data['page_name']		=	'faq_create';
-		$page_data['page_title']	=	'Create faq';
+		$page_data['page_title']	=	'Crear preguntas frecuentes';
 		$this->load->view('backend/index', $page_data);
 	}
 

@@ -8,7 +8,7 @@
 	        <div class="panel panel-primary">
 	        	<div class="panel-heading">
 	        		<div class="panel-title">
-	        			Edit Movie
+	        			Editar pelicula
 	        		</div>
 	        	</div>
 	            <div class="panel-body">

@@ -11,7 +11,7 @@
         <ul class="list-inline links-list pull-left" style="margin-top:9px;">
             <li>
                 <a href="<?php echo site_url();?>" target="_blank">
-                    <i class="entypo-paper-plane"></i> Página principal
+                    <i class="entypo-paper-plane"></i> Vista de administrador
                 </a>
             </li>
         </ul>
