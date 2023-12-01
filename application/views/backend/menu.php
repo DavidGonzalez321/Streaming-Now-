@@ -100,7 +100,7 @@
 
         <li  class="side-nav-item  <?php if ($page_name == 'Tienda Virtual')echo 'active';?>">
         <a href="<?php echo base_url();?>index.php?admin/Productos" class="side-nav-link <?php if ($page_name == 'dashboard')echo 'active';?>">
-                   <i class="fa fa-music"></i>
+                   <i class="fa fa-amazon"></i>
                    <span> <?php echo get_phrase('Productos'); ?> </span>
                </a>
         </li>
