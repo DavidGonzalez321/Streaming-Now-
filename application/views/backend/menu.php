@@ -92,16 +92,16 @@
            </li>
 
            <li  class="side-nav-item  <?php if ($page_name == 'Sountrack')echo 'active';?>">
-        <a href="<?php echo base_url();?>index.php?admin/Sountrack" class="side-nav-link <?php if ($page_name == 'dashboard')echo 'active';?>">
+                 <a href="<?php echo base_url();?>index.php?admin/Sountrack" class="side-nav-link <?php if ($page_name == 'dashboard')echo 'active';?>">
                    <i class="fa fa-music"></i>
                    <span> <?php echo get_phrase('Sountrack'); ?> </span>
-               </a>
-        </li>
+                </a>
+            </li>
 
         <li  class="side-nav-item  <?php if ($page_name == 'Tienda Virtual')echo 'active';?>">
         <a href="<?php echo base_url();?>index.php?admin/Productos" class="side-nav-link <?php if ($page_name == 'dashboard')echo 'active';?>">
                    <i class="fa fa-amazon"></i>
-                   <span> <?php echo get_phrase('Productos'); ?> </span>
+                   <span> <?php echo get_phrase('Tienda Virtual'); ?> </span>
                </a>
         </li>
 

@@ -1229,5 +1229,7 @@
     "pagar_con_stripe": "Pagar con stripe",
     "nombre": "Nombre",
     "pagar": "Pagar",
-    "tarjeta_de_débito/crédito": "Tarjeta de débito/crédito"
+    "tarjeta_de_débito/crédito": "Tarjeta de débito/crédito",
+    "salas_de_chat": "Salas de chat",
+    "sirector": "Sirector"
 }

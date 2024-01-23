@@ -1,5 +1,5 @@
 
-<div class="reloj" style="color: #050ae7; font-weight: bold;">
+<div class="reloj" style="color: #666666; font-weight: bold;">
     <p class="fecha" style="display: inline-block;"></p> <p class="tiempo" style="display: inline-block;"></p>
     
 </div>

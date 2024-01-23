@@ -87,3 +87,52 @@
         window.location = "<?php echo base_url();?>index.php?admin/series_list/" + actor;
     }
 </script>
+
+
+<body>
+    
+    <canvas id="myChart" style="position: relative; height: 40vh; width: 80vw;"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart')
+        var myChart = new Chart(ctx, {
+            type:'bar',
+            data:{
+                datasets: [{
+                    label: 'rating',
+                    backgroundColor: ['#6bf1ab','#63d69f', '#438c6c', '#509c7f', '#1f794e', '#34444c', '#90CAF9', '#64B5F6', '#42A5F5', '#2196F3', '#0D47A1'],
+                    borderColor: ['black'],
+                    borderWidth:1
+                }]
+            },
+            options:{
+                scales:{
+                    y:{
+                        beginAtZero:true
+                    }
+                }
+            }
+        })
+
+        let url = 'http://localhost/streaming-now/apirest_php/series.php'
+        fetch(url)
+            .then( response => response.json() )
+            .then( datos => mostrar(datos) )
+            .catch( error => console.log(error) )
+
+
+        const mostrar = (series) =>{
+            series.forEach(element => {
+                myChart.data['labels'].push(element.title)
+                myChart.data['datasets'][0].data.push(element.rating)
+                myChart.update()
+            });
+            console.log(myChart.data)
+        }    
+
+
+
+    </script>
+</body>

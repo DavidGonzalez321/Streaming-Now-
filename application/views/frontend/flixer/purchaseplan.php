@@ -28,15 +28,15 @@ table{
 			</ul>
 			<table class="table table-striped table-hover" style="color: #000;">
 				<tbody>
-					<tr>
-						<td>
+					<tr style="background: linear-gradient(to right, yellow, orange, red );">
+						<td style="background-color: #000;">
 							<h6>Paquete de Suscripciones</h6>
 						</td>
 						<?php
 						$plans = $this->crud_model->get_active_plans();
 						foreach ($plans as $row):
 							?>
-							<td align="center">
+							<td align="center" >
 								<h5 style="text-transform: uppercase;"><?php echo $row['name'];?></h5>
 							</td>
 						<?php endforeach;?>

@@ -31,7 +31,7 @@
 			<ul class="nav navbar-nav">
 				<!-- MOVIES GENRE WISE-->
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #050ae7; font-weight: bold;">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #fffffff; font-weight: bold;">
 						<?php echo get_phrase('Peliculas');?> <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
@@ -55,7 +55,7 @@
 				</li>
 				<!-- TV SERIES GENRE WISE-->
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #050ae7; font-weight: bold;">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #fffffff; font-weight: bold;">
 						<?php echo get_phrase('Series');?> <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
@@ -79,20 +79,20 @@
 				</li>
 
 				<li>
-					<a href="<?php echo base_url();?>index.php?browse/sountrack" style="color: #050ae7; font-weight: bold;">
+					<a href="<?php echo base_url();?>index.php?browse/sountrack" style="color: #fffffff; font-weight: bold;">
 						<?php echo get_phrase('Sountrack');?> <span class="caret"></span>
 					</a>
 				</li>
 
 				<li>
-					<a href="<?php echo base_url();?>index.php?browse/productos" style="color: #050ae7; font-weight: bold;">
+					<a href="<?php echo base_url();?>index.php?browse/productos" style="color: fffffff#; font-weight: bold;">
 						<?php echo get_phrase('Tienda Virtual');?> <span class="caret"></span>
 					</a>
 				</li>
 
 
 				<li>
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #050ae7; font-weight: bold;">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #fffffff; font-weight: bold;">
 						<?php echo get_phrase('Comunidad Web');?> <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
@@ -148,7 +148,7 @@
 					}
 				}
 				?>
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right"style="color:gray">
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding:10px;">
 					<img src="<?php echo $bar_thumb;?>"

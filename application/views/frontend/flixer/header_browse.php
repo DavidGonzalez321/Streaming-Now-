@@ -17,7 +17,7 @@
 	?>
 <div class="navbar navbar-default navbar-fixed-top <?php echo $nav_type;?>" style=" background-color: #000 ">
 	<div class="container" style=" width: 100%;height: 65px; ">
-		<div class="navbar-header">
+		<div class="navbar-header" >
 			<a href="<?php echo base_url();?>index.php?browse/home" class="navbar-brand" style="heihgt:45px">
 				<img src="<?php echo base_url();?>/assets/global/logo.png" style="height:60px;width:60px; float: left;margin-left: -6px; margin-top: -15px;background-color:#000;background-size: cover; border-radius:50%;" />
 			</a>
@@ -27,11 +27,11 @@
 				<span class="icon-bar"></span>
 			</button>
 		</div>
-		<div class="navbar-collapse collapse" id="navbar-main">
+		<div class="navbar-collapse collapse" id="navbar-main" >
 			<ul class="nav navbar-nav">
 				<!-- MOVIES GENRE WISE-->
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #050ae7; font-weight: bold;">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #ffffff; font-weight: bold;">
 						<?php echo get_phrase('Peliculas');?> <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
@@ -55,7 +55,7 @@
 				</li>
 				<!-- TV SERIES GENRE WISE-->
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #050ae7; font-weight: bold;">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #ffffff; font-weight: bold;">
 						<?php echo get_phrase('Series');?> <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
@@ -79,20 +79,20 @@
 				</li>
 
 				<li>
-					<a href="<?php echo base_url();?>index.php?browse/sountrack" style="color: #050ae7; font-weight: bold;">
+					<a href="<?php echo base_url();?>index.php?browse/sountrack" style="color: #ffffff; font-weight: bold;">
 						<?php echo get_phrase('Sountrack');?> <span class="caret"></span>
 					</a>
 				</li>
 
 				<li>
-					<a href="<?php echo base_url();?>index.php?browse/productos" style="color: #050ae7; font-weight: bold;">
+					<a href="<?php echo base_url();?>index.php?browse/productos" style="color: #ffffff; font-weight: bold;">
 						<?php echo get_phrase('Tienda Virtual');?> <span class="caret"></span>
 					</a>
 				</li>
 
 
 				<li>
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #050ae7; font-weight: bold;">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #ffffff; font-weight: bold;">
 						<?php echo get_phrase('Comunidad Web');?> <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
@@ -115,47 +115,47 @@
 			</ul>
 			<!-- PROFILE, ACCOUNT SECTION -->
 			<?php
-				// by deault, email & general thumb shown at top
-				$bar_text	=	$this->db->get_where('user', array('user_id'=>$this->session->userdata('user_id')))->row('email');
-				$bar_thumb	=	base_url('assets/global/thumb1.png');
+					// by deault, email & general thumb shown at top
+					$bar_text	=	$this->db->get_where('user', array('user_id'=>$this->session->userdata('user_id')))->row('email');
+					$bar_thumb	=	base_url('assets/global/thumb1.png');
 
-				// check if there is active subscription
-				$subscription_validation	=	$this->crud_model->validate_subscription();
-				if ($subscription_validation != false)
-				{
-					// if there is active subscription, check the selected/active user of current user account
+					// check if there is active subscription
+					$subscription_validation	=	$this->crud_model->validate_subscription();
+					if ($subscription_validation != false)
+					{
+						// if there is active subscription, check the selected/active user of current user account
 
-					$active_user	=	$this->session->userdata('active_user');
-					if ($active_user == 'user1')
-					{
-						$bar_text 	=	$this->crud_model->get_username_of_user('user1');
-						$bar_thumb	=	$this->crud_model->get_image_url_of_user('user1');
+						$active_user	=	$this->session->userdata('active_user');
+						if ($active_user == 'user1')
+						{
+							$bar_text 	=	$this->crud_model->get_username_of_user('user1');
+							$bar_thumb	=	$this->crud_model->get_image_url_of_user('user1');
+						}
+						else if ($active_user == 'user2')
+						{
+							$bar_text 	=	$this->crud_model->get_username_of_user('user2');
+							$bar_thumb	=	$this->crud_model->get_image_url_of_user('user2');
+						}
+						else if ($active_user == 'user3')
+						{
+							$bar_text 	=	$this->crud_model->get_username_of_user('user3');
+							$bar_thumb	=	$this->crud_model->get_image_url_of_user('user3');
+						}
+						else if ($active_user == 'user4')
+						{
+							$bar_text 	=	$this->crud_model->get_username_of_user('user4');
+							$bar_thumb	=	$this->crud_model->get_image_url_of_user('user4');
+						}
 					}
-					else if ($active_user == 'user2')
-					{
-						$bar_text 	=	$this->crud_model->get_username_of_user('user2');
-						$bar_thumb	=	$this->crud_model->get_image_url_of_user('user2');
-					}
-					else if ($active_user == 'user3')
-					{
-						$bar_text 	=	$this->crud_model->get_username_of_user('user3');
-						$bar_thumb	=	$this->crud_model->get_image_url_of_user('user3');
-					}
-					else if ($active_user == 'user4')
-					{
-						$bar_text 	=	$this->crud_model->get_username_of_user('user4');
-						$bar_thumb	=	$this->crud_model->get_image_url_of_user('user4');
-					}
-				}
-				?>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding:10px;">
+			?>
+			<ul class="nav navbar-nav navbar-right" >
+				<li class="dropdown" >
+					<a style=" color: #ffffff;" class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding:10px;" >
 					<img src="<?php echo $bar_thumb;?>"
 						style="height:30px; border-radius: 50%;" />
 					<?php echo $bar_text;?>
-					<span class="caret"></span></a>
-					<ul class="dropdown-menu" aria-labelledby="themes">
+					<span class="caret" style=" color: #ffffff;"></span></a>
+					<ul class="dropdown-menu" aria-labelledby="themes" style="color: #ffffff;">
 						<?php
 							// user list shown only if there is active subscription
 							if ($subscription_validation != false):
