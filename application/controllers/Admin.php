@@ -32,12 +32,12 @@ class Admin extends CI_Controller {
 		$this->load->view('backend/index', $page_data);
 	}
 
-	function Chatroom()
-	{
-		$page_data['page_name']		=	'Chatroom';
-		$page_data['page_title']	=	'Salas de chat';
-		$this->load->view('backend/index', $page_data);
-	}
+	// function comunidad()
+	// {
+	// 	$page_data['page_name']		=	'Comunidad';
+	// 	$page_data['page_title']	=	'Comunidad Web';
+	// 	$this->load->view('backend/index', $page_data);
+	// }
 
 	function productos()
 	{

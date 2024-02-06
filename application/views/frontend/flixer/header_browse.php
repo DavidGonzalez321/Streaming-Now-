@@ -90,15 +90,12 @@
 					</a>
 				</li>
 
-
 				<li>
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #ffffff; font-weight: bold;">
+					<a href="<?php echo base_url();?>index.php?browse/comunidad" style="color: #ffffff; font-weight: bold;">
 						<?php echo get_phrase('Comunidad Web');?> <span class="caret"></span>
 					</a>
-					<ul class="dropdown-menu" aria-labelledby="themes">
-						
-					</ul>
 				</li>
+
 
 				<!-- MY LIST -->
 				<?php if($this->session->userdata('active_user') != 'admin'): ?>

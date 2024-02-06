@@ -85,6 +85,12 @@
 				</li>
 
 				<li>
+					<a href="<?php echo base_url();?>index.php?browse/comunidad" style="color: #ffffff; font-weight: bold;">
+						<?php echo get_phrase('Comunidad');?> <span class="caret"></span>
+					</a>
+				</li>
+
+				<li>
 					<a href="<?php echo base_url();?>index.php?browse/productos" style="color: fffffff#; font-weight: bold;">
 						<?php echo get_phrase('Tienda Virtual');?> <span class="caret"></span>
 					</a>

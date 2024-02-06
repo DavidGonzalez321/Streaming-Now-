@@ -273,6 +273,13 @@ class Browse extends CI_Controller {
 		$this->load->view('frontend/index', $page_data);
 	}
 
+	function comunidad()
+	{
+		$page_data['page_name']		=	'comunidad';
+		$page_data['page_title']	=	'Comunidad Web';
+		$this->load->view('frontend/index', $page_data);
+	}
+
 	function productos()
 	{
 		$page_data['page_name']		=	'productos';

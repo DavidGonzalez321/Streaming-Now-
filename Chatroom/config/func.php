@@ -9,7 +9,7 @@
  **/
 function searchUser_bUsername($db, $username){
 	if(!empty($username) && !mysqli_error($db)){
-		$sql = mysqli_query($db, "select user_id,name,email from user where username = '$username'");
+		$sql = mysqli_query($db, "select id,firstName,lastName,profilePicture from user where username = '$username'");
 		if(mysqli_num_rows($sql) > 0){
 			$result = mysqli_fetch_array($sql);
 			
@@ -32,7 +32,7 @@ function searchUser_bUsername($db, $username){
  **/
 function searchUser_bId($db, $userid){
 	if(!empty($userid) && !mysqli_error($db)){
-		$sql = mysqli_query($db, "select name,email from user where id=$userid");
+		$sql = mysqli_query($db, "select username,firstName,lastName,profilePicture from user where id=$userid");
 		if(mysqli_num_rows($sql) > 0){
 			$result = mysqli_fetch_array($sql);
 			
@@ -55,7 +55,7 @@ function searchUser_bId($db, $userid){
  **/
 function searchUser_bSession($db, $session){
 	if(!empty($session) && !mysqli_error($db)){
-		$sql = mysqli_query($db, "select user_id,type,name,email,password from user where user1_session = '$session'");
+		$sql = mysqli_query($db, "select id,username,password,firstName,lastName,profilePicture,admin from user where session = '$session'");
 		if(mysqli_num_rows($sql) > 0){
 			$result = mysqli_fetch_array($sql);
 			
@@ -88,11 +88,21 @@ function checkUserSession($db){
 			return false;
 		}
 		
+		$ban_check = mysqli_query($db, "select * from ban_list where user_id = {$user["id"]}");
+		if(mysqli_num_rows($ban_check) > 0){
+			$ban = mysqli_fetch_array($ban_check);
+			mysqli_query($db, "UPDATE user SET session = '' WHERE id = {$ban["user_id"]}");
+			die(array("success" => false, "message" => "You got banned! Reason: {$ban["ban_reason"]}"));
+		}
 		
-		if($user["type"] == 1){
+		if($user["admin"] == 1){
 			$isAdmin = true;
 		}
 		
+		$inLogin = true;
+		$profilePicture = $user["profilePicture"];
+		
+		return true;
 	} else {
 		return false;
 	}

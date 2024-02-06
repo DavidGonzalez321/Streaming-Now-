@@ -1231,5 +1231,8 @@
     "pagar": "Pagar",
     "tarjeta_de_débito/crédito": "Tarjeta de débito/crédito",
     "salas_de_chat": "Salas de chat",
-    "sirector": "Sirector"
+    "sirector": "Sirector",
+    "url_del_video_no_soportado": "Url del video no soportado",
+    "episodio": "Episodio",
+    "comunidad": "Comunidad"
 }
